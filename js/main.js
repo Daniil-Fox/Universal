@@ -15065,6 +15065,16 @@ _vendor_aos__WEBPACK_IMPORTED_MODULE_4___default().init({
   // whether elements should animate out while scrolling past them
   anchorPlacement: 'top-bottom' // defines which position of the element regarding to window should trigger the animation
 });
+
+const btnColumns = document.getElementById('columns');
+const columnsItem = document.querySelectorAll('.sidebar__item');
+btnColumns.addEventListener('click', () => {
+  console.log('click');
+  console.log(columnsItem);
+  columnsItem.forEach(el => {
+    el.classList.toggle('visible');
+  });
+});
 })();
 
 /******/ })()
