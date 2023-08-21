@@ -1483,7 +1483,11 @@ a {
   font-size: 16px;
   font-weight: 700;
   line-height: 25px;
-  max-width: 50%;
+}
+@media (max-width: 576px) {
+  .article__text--cat {
+    max-width: 50%;
+  }
 }
 .article__comment {
   display: -webkit-box;
